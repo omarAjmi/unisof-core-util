@@ -51,4 +51,14 @@ public class LogUtil {
             throw e;
         }
     }
+
+    public static RuntimeException logExceptionAsError(Logger logger, RuntimeException throwable) {
+        logger.error(throwable.getMessage(), throwable);
+        return throwable;
+    }
+
+    public static RuntimeException logExceptionAsWarn(Logger logger, RuntimeException throwable) {
+        logger.warn(throwable.getMessage(), throwable);
+        return throwable;
+    }
 }
