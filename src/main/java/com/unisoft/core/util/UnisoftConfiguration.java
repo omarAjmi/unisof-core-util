@@ -22,7 +22,7 @@ public class UnisoftConfiguration implements Cloneable {
     private final ConcurrentMap<String, String> configurations;
 
     /**
-     * Constructs a configuration containing the known Azure properties constants.
+     * Constructs a configuration containing the known Unisoft properties constants.
      */
     public UnisoftConfiguration() {
         this.configurations = new ConcurrentHashMap<>();
